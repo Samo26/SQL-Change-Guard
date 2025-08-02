@@ -1,56 +1,93 @@
 # SQL Change Guard
 
-SQL Change Guard is a secure and compliant SQL change management solution designed for enterprise environments where auditability, validation, and control are essential. Built with WPF and SQL Server technologies, it enables organizations to analyze, validate, approve, and execute SQL scripts with full transparency and minimal risk.
+SQL Change Guard is a secure and auditable SQL change management solution designed for enterprise environments that demand compliance, traceability, and control. Built with WPF and SQL Server technologies, it enables organizations to analyze, validate, approve, and execute SQL scripts with full transparency and minimum risk.
 
 ## Overview
 
-SQL Change Guard prevents unauthorized or risky SQL deployments by enforcing structured change validation workflows. It helps institutions meet internal policies, COBIT and ITIL compliance, and external regulatory requirements such as SOX and GDPR.
+Designed for industries like banking, finance, and insurance, SQL Change Guard ensures all SQL scripts go through a strict review and validation process before being executed in production. It supports COBIT, ITIL, and internal audit standards, helping organizations meet regulatory requirements such as SOX and GDPR.
 
 ## Key Features
 
 - Pre-deployment validation of SQL scripts
-- Detection of unsafe patterns (e.g. DELETE/UPDATE without WHERE)
-- Script lifecycle: Pending, Executed, Rejected, Re-tested
-- Approval-based execution flow (CAB or change management integration)
-- Audit logs for each change and operator
-- WPF-based secure deployment interface
-- Supports GO-based batch splitting in single transactions
-- Automatic rollback if any batch fails
-- Sandbox testing environment support
+- Detection of risky commands (e.g., DELETE/UPDATE without WHERE)
+- COBIT/ITIL-compliant change approval process
+- Script lifecycle management: Pending, Executed, Rejected
+- Audit log generation and secure execution records
+- WPF-based UI for dashboard and change tracking
+- Supports transactional execution with GO-splitting
+- Sandbox environment support before production deployment
+- Secure dual-connection handling (sandbox and production)
 
-## Installation & Requirements
+## Use Cases
 
-- Windows OS with .NET Framework 4.7.2 or higher
-- SQL Server 2016 or higher
-- Visual Studio (for development usage)
-- Two separate SQL Server connections (sandbox & production)
+- A bank needs to audit every SQL deployment for regulatory reporting.
+- A fintech startup wants to prevent accidental data loss through unmanaged scripts.
+- A corporate IT department needs to enforce CAB-approved change controls.
 
-## Usage
+## Sample Input and Output
 
-1. Prepare your SQL script as a `.sql` file.
-2. Import the script into SQL Change Guard interface.
-3. The system analyzes the script and shows:
-   - Command types
-   - Risky statements (if any)
-   - Estimated impact scope
-4. Review and validate the script.
-5. Submit for approval if necessary (CAB/ITIL process).
-6. Execute script securely across environments.
-7. All execution logs and decisions are stored and can be audited.
+**Input SQL Script:**
+```sql
+DELETE FROM Customers
+Analysis Output:
 
-## Compliance
+Warning: DELETE without WHERE clause detected.
 
-SQL Change Guard aligns with the following frameworks:
+Action: Script blocked until reviewed and approved.
 
-- COBIT (Control Objectives for Information and Related Technologies)
-- ITIL (Information Technology Infrastructure Library)
-- GDPR (General Data Protection Regulation)
-- SOX (Sarbanes–Oxley Act)
+Installation & Requirements
+Windows OS with .NET Framework 4.7.2 or higher
 
-## Contact
+Microsoft SQL Server (2016 or higher recommended)
 
-- Website: https://sqlchangeguard.com  
-- LinkedIn: https://linkedin.com/company/sqlchangeguard  
-- Email: info@sqlchangeguard.com  
+Visual Studio (optional, for developers)
 
----
+Two database connections: sandbox and production
+
+Usage
+Import a SQL script into the SQL Change Guard interface.
+
+The script is automatically analyzed for risky or non-compliant statements.
+
+A visual report of findings is presented to the reviewer.
+
+The reviewer can approve, reject, or request modifications.
+
+Once approved, the script is executed securely with audit trail creation.
+
+All activity is logged in the request database and is audit-ready.
+
+FAQ
+Q: Is this tool open source?
+A: No, this repository is for demonstration and documentation purposes. Contact us for licensing options.
+
+Q: Does it support databases other than SQL Server?
+A: Currently only Microsoft SQL Server is supported. Other engines are under evaluation.
+
+Q: Can it integrate with DevOps or CI/CD tools?
+A: CLI and API integrations are planned for future releases.
+
+Q: Can we run it in a non-banking context?
+A: Absolutely. Any organization needing safe and auditable SQL deployments can benefit.
+
+Compliance
+SQL Change Guard is designed in accordance with the following frameworks:
+
+COBIT (Control Objectives for Information and Related Technologies)
+
+ITIL (Information Technology Infrastructure Library)
+
+GDPR (General Data Protection Regulation)
+
+SOX (Sarbanes–Oxley Act)
+
+License
+This repository is intended for demonstration and evaluation purposes only.
+All rights reserved to the author. For enterprise licensing, please contact us directly.
+
+Contact
+Website: https://sqlchangeguard.com
+
+LinkedIn: https://linkedin.com/company/sqlchangeguard
+
+Email: info@sqlchangeguard.com
