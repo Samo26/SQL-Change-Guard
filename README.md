@@ -23,6 +23,18 @@ Designed for industries like banking, finance, and insurance, SQL Change Guard e
 - A bank needs to audit every SQL deployment for regulatory reporting.
 - A fintech startup wants to prevent accidental data loss through unmanaged scripts.
 - A corporate IT department needs to enforce CAB-approved change controls.
+  
+## Architecture Overview
+
+SQL Change Guard is designed as a modular WPF application with a layered architecture:
+
+- **Presentation Layer:** WPF dashboard for script management and execution monitoring.
+- **Business Logic Layer:** Core validation engine handling script parsing, risk analysis, and policy enforcement.
+- **Data Access Layer:** Responsible for interactions with sandbox and production SQL Server instances.
+- **Audit & Logging Module:** Maintains full audit trails and execution logs in a dedicated database.
+- **Integration Layer:** (Planned) API endpoints for CI/CD pipeline integration and automated approvals.
+
+This modular design allows easy maintenance, testing, and future scalability.
 
 ## Sample Input and Output
 
